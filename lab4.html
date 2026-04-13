@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab 2 — Figma Crash Course</title>
+  <title>Lab 4 — Markup & Style II</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,7 +28,7 @@
   <main class="page">
 
     <div class="progress-card">
-      <p class="progress-label">Course Progress - Lab 2 of 10</p>
+      <p class="progress-label">Course Progress - Lab 4 of 10</p>
       <div class="progress-pips">
         <div class="pip current"></div>
         <div class="pip"></div><div class="pip"></div><div class="pip"></div>
@@ -38,13 +38,12 @@
     </div>
 
     <div class="hero-card">
-      <div class="lab-num">02</div>
-      <h1 class="hero-title">Figma Crash Course</h1>
+      <div class="lab-num">04</div>
+      <h1 class="hero-title">Markup & Style II</h1>
       <p class="hero-desc">
-       Designed a brand identity and two-page interactive prototype for Galactic Pizza — an
-        intergalactic pizza delivery service. Created a single-color logo from scratch using
-        Figma's shape, vector, and boolean tools, built reusable components, and assembled
-        a fully clickable prototype with a working order flow.
+        Took a one-page portfolio site from wireframe to live deployment. Designing the
+        full comp in Figma first, then building it out in HTML and CSS. The layout features
+        a full-width header, a hero text block, and a two-column image and bio section.
       </p>
     </div>
 
@@ -53,7 +52,7 @@
      <div class="card">
   <p class="card-label">Live Preview</p>
   <div class="preview-box">
-    <img src="lab4ss.png" alt="Lab 2 preview">
+    <img src="lab4ss.png" alt="Lab 4 preview">
   </div>
   <a href="https://lab45.netlify.app/" target="_blank" class="btn">Open Lab</a>
 </div>
@@ -61,28 +60,24 @@
 <div class="card">
         <p class="card-label">Skills Used</p>
         <div class="tags">
-         <span class="tag">Figma</span>
-          <span class="tag">Vector tools</span>
-          <span class="tag">Boolean operations</span>
-          <span class="tag">Components</span>
-          <span class="tag">Prototyping</span>
-          <span class="tag">Variants</span>
-          <span class="tag">Color palettes</span>
+          <span class="tag">Figma</span>
+          <span class="tag">HTML</span>
+          <span class="tag">Codespaces</span>
+          <span class="tag">Semantic elements</span>
+          <span class="tag">Two-column Layout</span>
         </div>
 
-         <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
+         
+ 
+        <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
         <div class="takeaway-list">
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Reusable components save time and keep designs consistent across pages</p>
+            <p>Designing in Figma first makes the HTML/CSS build faster. Layout and color decisions are already made.</p>
           </div>
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Boolean tools unlock complex logo shapes from simple primitives.</p>
-          </div>
-          <div class="takeaway">
-            <div class="takeaway-dot"></div>
-            <p>Variants make interactive elements like dropdowns and checkboxes much easier to prototype</p>
+            <p>Semantic elements like header, section, and main improve both accessibility and readability.</p>
           </div>
         </div>
       </div>
@@ -90,34 +85,26 @@
     </div>
 
 
-     <div class="two-col">
+    <div class="two-col">
  
       <div class="card">
         <p class="card-label">Process</p>
         <div class="process-steps">
           <div class="step">
             <div class="step-num">1</div>
-            <p>Sketched logo concepts on paper before opening Figma</p>
+            <p>Built the full design comp in Figma with copywriting and a color palette from Coolors.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <p>Built the Galactic Pizza logo using shapes, vector networks, and pathfinder tools — exported as a reusable component</p>
+            <p>Created a new repo from the boilerplate and opened the project in Codespaces.</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <p>Selected a color palette from Coolors and applied it across both pages</p>
+            <p>Wrote semantic HTML markup following the wireframe structure exactly.</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <p>Designed the homepage with a full ordering interface — location, size, toppings, special requests, and a place order button</p>
-          </div>
-          <div class="step">
-            <div class="step-num">5</div>
-            <p>Built the About page with company lore, HQ location, and the galactic delivery secret</p>
-          </div>
-          <div class="step">
-            <div class="step-num">6</div>
-            <p>Wired up interactions — dropdown, checkboxes, button, and page navigation — then shared via Figma prototype link</p>
+            <p>Styled with CSS color palette, typography, two-column section, and spacing.</p>
           </div>
         </div>
       </div>
@@ -126,9 +113,7 @@
      <div class="card">
         <p class="card-label">Challenges</p>
         <p class="challenge-text">
-          While conducting this lab there were no major challenges. Getting comfortable with
-          Figma's variant system for the interactive checkboxes and dropdown took some
-          experimentation, but once the logic clicked it made the prototype feel much more realistic.</p>
+           Translating the two-column layout from Figma into CSS had some research into how to align an image and text block side by side. I experimented with display: flex to get the columns to behave correctly.</p>
       </div>
 
     </div>
