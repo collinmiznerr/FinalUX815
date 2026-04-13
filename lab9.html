@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab 2 — Figma Crash Course</title>
+  <title>Lab 9 — What's in a Name?</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,7 +28,7 @@
   <main class="page">
 
     <div class="progress-card">
-      <p class="progress-label">Course Progress - Lab 2 of 10</p>
+      <p class="progress-label">Course Progress - Lab 9 of 10</p>
       <div class="progress-pips">
         <div class="pip current"></div>
         <div class="pip"></div><div class="pip"></div><div class="pip"></div>
@@ -38,13 +38,13 @@
     </div>
 
     <div class="hero-card">
-      <div class="lab-num">02</div>
-      <h1 class="hero-title">Figma Crash Course</h1>
+      <div class="lab-num">09</div>
+      <h1 class="hero-title">What's in a Name?</h1>
       <p class="hero-desc">
-       Designed a brand identity and two-page interactive prototype for Galactic Pizza — an
-        intergalactic pizza delivery service. Created a single-color logo from scratch using
-        Figma's shape, vector, and boolean tools, built reusable components, and assembled
-        a fully clickable prototype with a working order flow.
+       Built a random name generator using 11ty and Alpine.js. A button click picks a
+        random name from a list of ten and displays it using Alpine's reactive data
+        binding to update the DOM without writing any manual JavaScript event
+        listeners. A CSS framework was used to style the interface.
       </p>
     </div>
 
@@ -53,40 +53,32 @@
      <div class="card">
   <p class="card-label">Live Preview</p>
   <div class="preview-box">
-    <img src="lab9ss.png" alt="Lab 2 preview">
+    <img src="lab9ss.png" alt="Lab 9 preview">
   </div>
   <a href="https://gregarious-blancmange-f9bbc9.netlify.app/" target="_blank" class="btn">Open Lab</a>
 </div>
 
-<div class="card">
+ <div class="card">
         <p class="card-label">Skills Used</p>
         <div class="tags">
-         <span class="tag">Figma</span>
-          <span class="tag">Vector tools</span>
-          <span class="tag">Boolean operations</span>
-          <span class="tag">Components</span>
-          <span class="tag">Prototyping</span>
-          <span class="tag">Variants</span>
-          <span class="tag">Color palettes</span>
+          <span class="tag">Alpine.js</span>
+          <span class="tag">11ty</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">External JS libraries</span>
         </div>
 
          <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
         <div class="takeaway-list">
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Reusable components save time and keep designs consistent across pages</p>
+            <p>Alpine.js handles reactivity directly in HTML attributes.</p>
           </div>
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Boolean tools unlock complex logo shapes from simple primitives.</p>
-          </div>
-          <div class="takeaway">
-            <div class="takeaway-dot"></div>
-            <p>Variants make interactive elements like dropdowns and checkboxes much easier to prototype</p>
+            <p>Keeping logic like the name list and random number function in a separate JS file keeps the HTML clean and easier to maintain.</p>
           </div>
         </div>
       </div>
-
     </div>
 
 
@@ -97,27 +89,19 @@
         <div class="process-steps">
           <div class="step">
             <div class="step-num">1</div>
-            <p>Sketched logo concepts on paper before opening Figma</p>
+            <p>Added Alpine.js to the &lt;head&gt; of the main layout template using a CDN &lt;script defer&gt; tag</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <p>Built the Galactic Pizza logo using shapes, vector networks, and pathfinder tools — exported as a reusable component</p>
+            <p>Created a separate JS file with a list of 10 names and a function to pick one at random using Math.random()</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <p>Selected a color palette from Coolors and applied it across both pages</p>
+            <p>Built the HTML interface an &lt;h1&gt; to Alpine's reactive data and a button wired to the picker function x-on:click.</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <p>Designed the homepage with a full ordering interface — location, size, toppings, special requests, and a place order button</p>
-          </div>
-          <div class="step">
-            <div class="step-num">5</div>
-            <p>Built the About page with company lore, HQ location, and the galactic delivery secret</p>
-          </div>
-          <div class="step">
-            <div class="step-num">6</div>
-            <p>Wired up interactions — dropdown, checkboxes, button, and page navigation — then shared via Figma prototype link</p>
+            <p>Tested the button interaction and verified the name updates correctly on each click.</p>
           </div>
         </div>
       </div>
@@ -126,9 +110,7 @@
      <div class="card">
         <p class="card-label">Challenges</p>
         <p class="challenge-text">
-          While conducting this lab there were no major challenges. Getting comfortable with
-          Figma's variant system for the interactive checkboxes and dropdown took some
-          experimentation, but once the logic clicked it made the prototype feel much more realistic.</p>
+          The hardest part was figuring out how Alpine.js accesses functions and data defined outside of the HTML file. I had to make the name list and random picker function available on the window object so Alpine's x-data could reference them.</p>
       </div>
 
     </div>
