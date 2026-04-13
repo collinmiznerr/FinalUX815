@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab 2 — Figma Crash Course</title>
+  <title>Lab 6 — The Big Scroll</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,7 +28,7 @@
   <main class="page">
 
     <div class="progress-card">
-      <p class="progress-label">Course Progress - Lab 2 of 10</p>
+      <p class="progress-label">Course Progress - Lab 6 of 10</p>
       <div class="progress-pips">
         <div class="pip current"></div>
         <div class="pip"></div><div class="pip"></div><div class="pip"></div>
@@ -38,13 +38,12 @@
     </div>
 
     <div class="hero-card">
-      <div class="lab-num">02</div>
-      <h1 class="hero-title">Figma Crash Course</h1>
+      <div class="lab-num">06</div>
+      <h1 class="hero-title">The Big Scroll</h1>
       <p class="hero-desc">
-       Designed a brand identity and two-page interactive prototype for Galactic Pizza — an
-        intergalactic pizza delivery service. Created a single-color logo from scratch using
-        Figma's shape, vector, and boolean tools, built reusable components, and assembled
-        a fully clickable prototype with a working order flow.
+      Built a single-column photo website where each image animates into view as the
+        user scrolls using the ScrollReveal JavaScript library. Each of the five images has
+        its own unique ScrollReveal instance with different animation options.
       </p>
     </div>
 
@@ -53,7 +52,7 @@
      <div class="card">
   <p class="card-label">Live Preview</p>
   <div class="preview-box">
-    <img src="lab6ss.png" alt="Lab 2 preview">
+    <img src="lab6ss.png" alt="Lab 6 preview">
   </div>
   <a href="https://tourmaline-rugelach-d78d92.netlify.app/" target="_blank" class="btn">Open Lab</a>
 </div>
@@ -61,28 +60,21 @@
 <div class="card">
         <p class="card-label">Skills Used</p>
         <div class="tags">
-         <span class="tag">Figma</span>
-          <span class="tag">Vector tools</span>
-          <span class="tag">Boolean operations</span>
-          <span class="tag">Components</span>
-          <span class="tag">Prototyping</span>
-          <span class="tag">Variants</span>
-          <span class="tag">Color palettes</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">ScrollReveal.js</span>
+          <span class="tag">External JS libraries</span>
+          <span class="tag">HTML</span>
         </div>
 
-         <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
+        <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
         <div class="takeaway-list">
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Reusable components save time and keep designs consistent across pages</p>
+            <p>JavaScript load order matters by placing &lt;script&gt; tags at the bottom of &lt;body&gt; ensures the DOM is ready before the script runs.</p>
           </div>
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Boolean tools unlock complex logo shapes from simple primitives.</p>
-          </div>
-          <div class="takeaway">
-            <div class="takeaway-dot"></div>
-            <p>Variants make interactive elements like dropdowns and checkboxes much easier to prototype</p>
+            <p>Third-party libraries like ScrollReveal can add complex interactivity with just a few lines of code.</p>
           </div>
         </div>
       </div>
@@ -92,32 +84,24 @@
 
      <div class="two-col">
  
-      <div class="card">
+     <div class="card">
         <p class="card-label">Process</p>
         <div class="process-steps">
           <div class="step">
             <div class="step-num">1</div>
-            <p>Sketched logo concepts on paper before opening Figma</p>
+            <p>Built the single-column HTML layout with 5 images sized at approximately 500x500px using CSS</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <p>Built the Galactic Pizza logo using shapes, vector networks, and pathfinder tools — exported as a reusable component</p>
+            <p>Added the ScrollReveal library via CDN &lt;script&gt; tag, placed before the closing &lt;/body&gt;</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <p>Selected a color palette from Coolors and applied it across both pages</p>
+            <p>Read through the ScrollReveal docs to understand options: origin, distance, duration, and delay</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <p>Designed the homepage with a full ordering interface — location, size, toppings, special requests, and a place order button</p>
-          </div>
-          <div class="step">
-            <div class="step-num">5</div>
-            <p>Built the About page with company lore, HQ location, and the galactic delivery secret</p>
-          </div>
-          <div class="step">
-            <div class="step-num">6</div>
-            <p>Wired up interactions — dropdown, checkboxes, button, and page navigation — then shared via Figma prototype link</p>
+            <p>Tested the scroll behavior in the browser and adjusted timing on each instance.</p>
           </div>
         </div>
       </div>
@@ -126,9 +110,7 @@
      <div class="card">
         <p class="card-label">Challenges</p>
         <p class="challenge-text">
-          While conducting this lab there were no major challenges. Getting comfortable with
-          Figma's variant system for the interactive checkboxes and dropdown took some
-          experimentation, but once the logic clicked it made the prototype feel much more realistic.</p>
+           Getting each instance to feel truly distinct took some experimentation with the docs to find parameters beyond the basic defaults.</p>
       </div>
 
     </div>
