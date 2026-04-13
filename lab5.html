@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab 2 — Figma Crash Course</title>
+  <title>Lab 5 — Polaroid Cloud</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -38,51 +38,44 @@
     </div>
 
     <div class="hero-card">
-      <div class="lab-num">02</div>
-      <h1 class="hero-title">Figma Crash Course</h1>
+      <div class="lab-num">05</div>
+      <h1 class="hero-title">Polaroid Cloud</h1>
       <p class="hero-desc">
-       Designed a brand identity and two-page interactive prototype for Galactic Pizza — an
-        intergalactic pizza delivery service. Created a single-color logo from scratch using
-        Figma's shape, vector, and boolean tools, built reusable components, and assembled
-        a fully clickable prototype with a working order flow.
+       Recreated a multi-section product page for "Polaroid Cloud". A fictitious
+        Polaroid photo storage service, as closely as possible from a provided Figma
+        comp. The focus was on writing reusable HTML and CSS using custom
+        properties to keep styles consistent across repeated components.
       </p>
     </div>
 
     <div class="two-col">
 
-     <div class="card">
-  <p class="card-label">Live Preview</p>
-  <div class="preview-box">
-    <img src="lab5ss.png" alt="Lab 2 preview">
-  </div>
-  <a href="https://glowing-kangaroo-842bbe.netlify.app/" target="_blank" class="btn">Open Lab</a>
-</div>
-
-<div class="card">
+    <div class="card">
+        <p class="card-label">Live Preview</p>
+        <div class="preview-box">
+          <img src="lab5ss.png" alt="Lab 5 preview">
+        </div>
+        <a href="YOUR_NETLIFY_URL_HERE" target="_blank" class="btn">Open Lab</a>
+      </div>
+ 
+      <div class="card">
         <p class="card-label">Skills Used</p>
         <div class="tags">
-         <span class="tag">Figma</span>
-          <span class="tag">Vector tools</span>
-          <span class="tag">Boolean operations</span>
-          <span class="tag">Components</span>
-          <span class="tag">Prototyping</span>
-          <span class="tag">Variants</span>
-          <span class="tag">Color palettes</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Reusable Components</span>
+          <span class="tag">CSS Custom Properties</span>
         </div>
 
-         <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
+          <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
         <div class="takeaway-list">
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Reusable components save time and keep designs consistent across pages</p>
+            <p>CSS custom properties like --color-primary make it easy to update a value once and have it apply everywhere.</p>
           </div>
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Boolean tools unlock complex logo shapes from simple primitives.</p>
-          </div>
-          <div class="takeaway">
-            <div class="takeaway-dot"></div>
-            <p>Variants make interactive elements like dropdowns and checkboxes much easier to prototype</p>
+            <p>Recreating a real design from a comp builds muscle memory for translating visuals into CSS rules.</p>
           </div>
         </div>
       </div>
@@ -97,27 +90,19 @@
         <div class="process-steps">
           <div class="step">
             <div class="step-num">1</div>
-            <p>Sketched logo concepts on paper before opening Figma</p>
+            <p>Studied the Polaroid Cloud Figma comp to identify repeating sections and shared styles.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <p>Built the Galactic Pizza logo using shapes, vector networks, and pathfinder tools — exported as a reusable component</p>
+            <p>Defined CSS custom properties at the :root level for colors, fonts, and sizing.</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <p>Selected a color palette from Coolors and applied it across both pages</p>
+            <p>Built the HTML structure section by section, using shared class names for repeated components.</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <p>Designed the homepage with a full ordering interface — location, size, toppings, special requests, and a place order button</p>
-          </div>
-          <div class="step">
-            <div class="step-num">5</div>
-            <p>Built the About page with company lore, HQ location, and the galactic delivery secret</p>
-          </div>
-          <div class="step">
-            <div class="step-num">6</div>
-            <p>Wired up interactions — dropdown, checkboxes, button, and page navigation — then shared via Figma prototype link</p>
+            <p>Styled each component using the custom properties. Keeping CSS consistent and minimal.</p>
           </div>
         </div>
       </div>
@@ -126,9 +111,7 @@
      <div class="card">
         <p class="card-label">Challenges</p>
         <p class="challenge-text">
-          While conducting this lab there were no major challenges. Getting comfortable with
-          Figma's variant system for the interactive checkboxes and dropdown took some
-          experimentation, but once the logic clicked it made the prototype feel much more realistic.</p>
+         The biggest challenge was figuring out how to structure repeated sections (like feature cards) without duplicating CSS. Using a shared class and CSS custom properties helped solve this.</p>
       </div>
 
     </div>
