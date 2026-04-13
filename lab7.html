@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab 2 — Figma Crash Course</title>
+  <title>Lab 7 — Explorer's Blog</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,7 +28,7 @@
   <main class="page">
 
     <div class="progress-card">
-      <p class="progress-label">Course Progress - Lab 2 of 10</p>
+      <p class="progress-label">Course Progress - Lab 7 of 10</p>
       <div class="progress-pips">
         <div class="pip current"></div>
         <div class="pip"></div><div class="pip"></div><div class="pip"></div>
@@ -39,12 +39,12 @@
 
     <div class="hero-card">
       <div class="lab-num">02</div>
-      <h1 class="hero-title">Figma Crash Course</h1>
+      <h1 class="hero-title">Explorer's Blog</h1>
       <p class="hero-desc">
-       Designed a brand identity and two-page interactive prototype for Galactic Pizza — an
-        intergalactic pizza delivery service. Created a single-color logo from scratch using
-        Figma's shape, vector, and boolean tools, built reusable components, and assembled
-        a fully clickable prototype with a working order flow.
+        Built a multi-page static blog using 11ty, written from the perspective of a lone
+        interstellar explorer. Blog posts were written in Markdown and generated
+        using AI, with a shared layout template powering the header and footer across
+        all four pages: homepage, two blog posts, and about page.
       </p>
     </div>
 
@@ -53,7 +53,7 @@
      <div class="card">
   <p class="card-label">Live Preview</p>
   <div class="preview-box">
-    <img src="lab7ss.png" alt="Lab 2 preview">
+    <img src="lab7ss.png" alt="Lab 7 preview">
   </div>
   <a href="https://app.netlify.com/projects/inquisitive-tarsier-77b4a5/overview" target="_blank" class="btn">Open Lab</a>
 </div>
@@ -61,28 +61,26 @@
 <div class="card">
         <p class="card-label">Skills Used</p>
         <div class="tags">
-         <span class="tag">Figma</span>
-          <span class="tag">Vector tools</span>
-          <span class="tag">Boolean operations</span>
-          <span class="tag">Components</span>
-          <span class="tag">Prototyping</span>
-          <span class="tag">Variants</span>
-          <span class="tag">Color palettes</span>
+          <span class="tag">11ty</span>
+          <span class="tag">Liquid templates</span>
+          <span class="tag">Layouts</span>
+          <span class="tag">Markdown</span>
+          <span class="tag">Static site generation</span>
         </div>
 
-         <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
+        <p class="card-label" style="margin-top: 16px;">Key Takeaways</p>
         <div class="takeaway-list">
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Reusable components save time and keep designs consistent across pages</p>
+            <p>11ty layouts let you define the HTML shell once and reuse it across every page.</p>
           </div>
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Boolean tools unlock complex logo shapes from simple primitives.</p>
+            <p>Markdown makes writing content fast and clean. 11ty makes it into valid HTML at build time without extra effort.</p>
           </div>
           <div class="takeaway">
             <div class="takeaway-dot"></div>
-            <p>Variants make interactive elements like dropdowns and checkboxes much easier to prototype</p>
+            <p>Shortcodes are a powerful way to create reusable content blocks that can be dropped into any page with a single line.</p>
           </div>
         </div>
       </div>
@@ -97,27 +95,23 @@
         <div class="process-steps">
           <div class="step">
             <div class="step-num">1</div>
-            <p>Sketched logo concepts on paper before opening Figma</p>
+            <p>Set up a new 11ty project and configured the folder structure for layouts, pages, and posts.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <p>Built the Galactic Pizza logo using shapes, vector networks, and pathfinder tools — exported as a reusable component</p>
+            <p>Built a custom shortcode for a reusable content block</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <p>Selected a color palette from Coolors and applied it across both pages</p>
+            <p>Used an AI tool to generate two blog posts written from an interstellar explorer's perspective (cited the model and prompt as an HTML comment)</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <p>Designed the homepage with a full ordering interface — location, size, toppings, special requests, and a place order button</p>
+            <p>Wrote each blog post as a .md Markdown file.</p>
           </div>
           <div class="step">
             <div class="step-num">5</div>
-            <p>Built the About page with company lore, HQ location, and the galactic delivery secret</p>
-          </div>
-          <div class="step">
-            <div class="step-num">6</div>
-            <p>Wired up interactions — dropdown, checkboxes, button, and page navigation — then shared via Figma prototype link</p>
+            <p>Wrote 10+ CSS rulesets to style the full site.</p>
           </div>
         </div>
       </div>
@@ -126,9 +120,7 @@
      <div class="card">
         <p class="card-label">Challenges</p>
         <p class="challenge-text">
-          While conducting this lab there were no major challenges. Getting comfortable with
-          Figma's variant system for the interactive checkboxes and dropdown took some
-          experimentation, but once the logic clicked it made the prototype feel much more realistic.</p>
+           Getting 11ty's layout to work correctly took some trial and error. Understanding how front matter in Markdown files connects to the layout file via the layout key.</p>
       </div>
 
     </div>
