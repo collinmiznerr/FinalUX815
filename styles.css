@@ -1,0 +1,16 @@
+:root {
+  --color-navy:     #2C3E50;
+  --color-sage:     #6B8F71;
+  --color-sage-dark:#4a6b52;
+  --color-bg:       #F4F4F0;
+  --color-white:    #ffffff;
+  --color-muted:    #5a6a7a;
+  --color-border:   #dddddd;
+  --color-tag-bg:   #e8ede8;
+  --color-tag-text: #3a5c3f;
+  --color-num-ghost:#e4ebe4;
+  --color-pip:      #e0e0dc;
+  --radius-sm:      6px;
+  --radius-md:      8px;
+  --font-main:      sans-serif;
+}
