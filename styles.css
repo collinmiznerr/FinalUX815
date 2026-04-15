@@ -25,3 +25,20 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+code {
+  font-size: 11px;
+  background: #f0f0ee;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+
+.site-header {
+  background: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+  padding: 16px 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
