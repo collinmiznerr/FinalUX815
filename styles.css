@@ -14,3 +14,14 @@
   --radius-md:      8px;
   --font-main:      sans-serif;
 }
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-navy);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
