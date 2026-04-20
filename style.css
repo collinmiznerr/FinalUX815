@@ -68,3 +68,14 @@ code {
   white-space: nowrap;
   transition: background 0.15s, color 0.15s;
 }
+
+.site-nav a:hover {
+  background: var(--color-sage);
+  color: var(--color-white);
+}
+
+.site-nav a.active {
+  background: var(--color-sage);
+  color: var(--color-white);
+  font-weight: 750;
+}
