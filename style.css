@@ -79,3 +79,13 @@ code {
   color: var(--color-white);
   font-weight: 750;
 }
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
