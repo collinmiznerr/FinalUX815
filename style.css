@@ -127,11 +127,13 @@ code {
   flex: 1;
   height: 5px;
   border-radius: 3px;
-  background: var(--color-sage);
+  background: var(--color-pip);
 }
 
-.pip.done    { background: var(--color-sage); }
-.pip.current { background: var(--color-navy); }
+.pip.done    { background: var(--color-sage); 
+}
+.pip.current { background: var(--color-navy); 
+}
 
 .hero-card {
   background: var(--color-white);
