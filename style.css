@@ -127,7 +127,7 @@ code {
   flex: 1;
   height: 5px;
   border-radius: 3px;
-  background: var(--color-pip);
+  background: var(--color-sage);
 }
 
 .pip.done    { background: var(--color-sage); }
