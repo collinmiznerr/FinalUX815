@@ -189,3 +189,71 @@ code {
   object-fit: cover;
   display: block;
 }
+
+.btn {
+  display: inline-block;
+  background: var(--color-navy);
+  color: var(--color-white);
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  margin-top: 12px;
+  transition: opacity 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.takeaway-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.takeaway {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.takeaway-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-sage);
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.takeaway p {
+  font-size: 12px;
+  color: var(--color-navy);
+  line-height: 1.5;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
